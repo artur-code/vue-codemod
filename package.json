@@ -1,0 +1,31 @@
+{
+  "name": "vue-codemod",
+  "version": "1.0.0",
+  "description": "Codemod cli and scripts for vue.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artur-code/vue-codemod.git"
+  },
+  "keywords": [
+    "vue",
+    "codemode",
+    "vue-class-component"
+  ],
+  "author": "Artur Davidyan",
+  "license": "ISC",
+  "bin": {
+    "vue-codemod": "./cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/artur-code/vue-codemod/issues"
+  },
+  "homepage": "https://github.com/artur-code/vue-codemod#readme",
+  "dependencies": {
+    "@babel/parser": "^7.2.3",
+    "yargs": "^12.0.5"
+  }
+}
