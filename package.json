@@ -26,6 +26,7 @@
   "homepage": "https://github.com/artur-code/vue-codemod#readme",
   "dependencies": {
     "@babel/parser": "^7.2.3",
+    "parse5": "^5.1.0",
     "yargs": "^12.0.5"
   },
   "devDependencies": {

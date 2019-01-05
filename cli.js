@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+const parser = require("./src/parser")
 
 require('yargs')
     .usage('$0 <cmd> [args]')
@@ -9,6 +10,7 @@ require('yargs')
         describe: 'files or directory to transform'
       })
     }, function (argv) {
+      parser.parse(argv.path)
       console.log('hello', argv.path)
     })
     .option('script', {
