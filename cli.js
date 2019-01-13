@@ -10,8 +10,9 @@ require('yargs')
         describe: 'files or directory to transform'
       })
     }, function (argv) {
-      parser.parse(argv.path)
-      console.log('hello', argv.path)
+      // TODO check script - path or name existing transform
+      const scriptFunction = require(argv.script).defaults
+      parser.parse(argv.path, scriptFunction)
     })
     .option('script', {
         alias: 's',
